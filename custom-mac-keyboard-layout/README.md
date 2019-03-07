@@ -12,7 +12,7 @@ It can be done with a tool called *Ukelele*.
 The whole process is fully explained in this [YouTube link](https://www.youtube.com/watch?v=K_DFP4PecRw).
 This [SO post](https://apple.stackexchange.com/questions/344217/custom-ukelele-layout-cmd-w-and-similar-shortcuts-not-working/344222) is also needed to make the shortcuts work.
 
-I already created the layout ([here](./fff)). 
+I already created the layout ([here](./Erfan-KB-Layout.keylayout)). 
 Download it and copy it to `/Library/Keyboard Layouts` folder.
 Then, to install the layout, go to `System Preferences -> Keyboard -> Input Sources`, and search for the layout's name, which is `Erfan-KB-Layout`.
 

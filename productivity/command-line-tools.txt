@@ -1,1 +1,4 @@
+# install zsh auto suggestions
 brew install zsh-autosuggestions
+# then add this line to the end of ~/.zshrc file:
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

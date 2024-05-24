@@ -14,3 +14,5 @@ Install: https://github.com/ohmyzsh/ohmyzsh
 Be sure to install Powerline font to that symbols be shown properly:
 https://github.com/powerline/fonts
 
+# Install "oh my bash"
+https://github.com/ohmybash/oh-my-bash

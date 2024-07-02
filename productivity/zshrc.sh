@@ -44,7 +44,7 @@ alias kn='f(){ tess kubectl config set-context --current --namespace="$@"; expor
 alias kbash='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE exec "$1" -c "$2" -it -- /bin/bash; unset -f f; }; f'
 alias krestart='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE exec "$1" -c "$2" -it -- kill 1; unset -f f; }; f'
 alias krun='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE exec -it "$1" -c "$2" "$3"; unset -f f; }; f'
-alias kget='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE get; unset -f f; }; f'
+alias kget='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE get $1; unset -f f; }; f'
 alias kgetpod='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE get pod "$1"; unset -f f; }; f'
 alias kdesc='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE describe; unset -f f; }; f'
 alias kdescpod='f(){ tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE describe pod "$1"; unset -f f; }; f'

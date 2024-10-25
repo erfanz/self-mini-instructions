@@ -37,7 +37,7 @@ docker_bash() {
 
 #-- TESS Commands ----------------------------
 alias tl='f(){ tess login -c "$@"; export TESS_CONTEXT="$@"; unset -f f; }; f'
-alias tc='f(){ export TESS_CONTEXT="$@"; unset -f f; }; f'
+alias tc='f(){ export TESS_CONTEXT="$@"; tess kubectl config use-context "$@"; unset -f f; }; f'
 alias tk='tess kubectl --context=$TESS_CONTEXT -n $TESS_NAMESPACE '
 alias tenv='echo "Cluster:" $TESS_CONTEXT; echo "Namespace:" $TESS_NAMESPACE'
 alias kn='f(){ tess kubectl config set-context --current --namespace="$@"; export TESS_NAMESPACE="$@"; unset -f f; }; f'
